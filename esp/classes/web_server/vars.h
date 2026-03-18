@@ -1,5 +1,6 @@
-#include <ESPAsyncWebServer.h>
-AsyncWebServer server(80);
+#include <WiFi.h>
+#include <WebServer.h>
+WebServer server(80);
 
 extern byte door_mode;
 extern byte mode;
@@ -23,5 +24,5 @@ extern bool p2_open;
 extern String box_num;
 extern int box_qtd;
 
-extern bool box_inside ;
+extern bool box_inside;
 extern const bool debug_mode;
